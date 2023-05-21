@@ -103,7 +103,616 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: artifact_neutral_f1_goldenhammer_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 215
+        width: 33
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b09e78a45a3878d409f63c378661a800
+      internalID: 1289518818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artifact_neutral_f1_goldenhammer_1
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 215
+        width: 38
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0ee22681792bd448b52ba2d4ce91303
+      internalID: 748965433
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artifact_neutral_f1_goldenhammer_2
+      rect:
+        serializedVersion: 2
+        x: 104
+        y: 213
+        width: 38
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cab9207ad947a0348afe0d4a8f593a59
+      internalID: -1355636551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artifact_neutral_f1_goldenhammer_3
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 216
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9cd6ee0aed53c544b92279a1fd8b3ad9
+      internalID: -903745733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artifact_neutral_f1_goldenhammer_4
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 216
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc8900e1bb23f6d47b0da2fb9291406d
+      internalID: 1379415093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artifact_neutral_f1_goldenhammer_5
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 216
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91970ac5466a2fe4192e691e8df5138a
+      internalID: -968760620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artifact_neutral_f1_goldenhammer_6
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 166
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2157223bddb074440b22447b9591d5c3
+      internalID: -318638490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artifact_neutral_f1_goldenhammer_7
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 165
+        width: 40
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9de32d9439f2bd24bb8fc886b96c46ad
+      internalID: 1939608698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artifact_neutral_f1_goldenhammer_8
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 166
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddc70564d8278604288ecbc80bf74278
+      internalID: 22011230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artifact_neutral_f1_goldenhammer_9
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0bdb00113dec694a88145c253c8e260
+      internalID: -159858094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artifact_neutral_f1_goldenhammer_10
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcb19ba401fc5a34f82cca064d64b5d7
+      internalID: -56828852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artifact_neutral_f1_goldenhammer_11
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 167
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19e20109a7f0b554da16cfd380921a81
+      internalID: 1882520150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artifact_neutral_f1_goldenhammer_12
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 118
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e28bb507e348b334bbc1b277361a371b
+      internalID: -1908750924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artifact_neutral_f1_goldenhammer_13
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 115
+        width: 40
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e8f80e09e6d12b40b1eb5b34bcd2752
+      internalID: -1704707866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artifact_neutral_f1_goldenhammer_14
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 117
+        width: 34
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67a188e2f37386e4eb06a0558cd91a8b
+      internalID: 2012250911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artifact_neutral_f1_goldenhammer_15
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 118
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74bcf73094ea0354299bfccf6eb8b46c
+      internalID: 375958462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artifact_neutral_f1_goldenhammer_16
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 118
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9f8f4a417666534888e73ef006a0973
+      internalID: 1287100768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artifact_neutral_f1_goldenhammer_17
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 118
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73393e85103e4344f8c5af0724655c6b
+      internalID: 1388952107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artifact_neutral_f1_goldenhammer_18
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 68
+        width: 36
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 123decd191ae3dd4dbb4a1b20e7f4352
+      internalID: -464883163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artifact_neutral_f1_goldenhammer_19
+      rect:
+        serializedVersion: 2
+        x: 55
+        y: 66
+        width: 40
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 984ee40abf9f6a441a3e658f9d179f8e
+      internalID: 26217970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artifact_neutral_f1_goldenhammer_20
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 69
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce05b7b7cd38b80499e58915f78b71e5
+      internalID: 1984771354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artifact_neutral_f1_goldenhammer_21
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 69
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6bd68aaf9752ae4fb4c1827da8a26fd
+      internalID: -799066438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artifact_neutral_f1_goldenhammer_22
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 69
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 338cac9806ead5f4393c0b4e34bbf7fc
+      internalID: -1512329093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artifact_neutral_f1_goldenhammer_23
+      rect:
+        serializedVersion: 2
+        x: 253
+        y: 69
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a320d151f0888ea40b1d78298896cf73
+      internalID: -827265315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artifact_neutral_f1_goldenhammer_24
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 19
+        width: 37
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e2264879910d57449c39006fe118c95
+      internalID: 1045506842
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artifact_neutral_f1_goldenhammer_25
+      rect:
+        serializedVersion: 2
+        x: 54
+        y: 17
+        width: 40
+        height: 39
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6f759bfa9bc860488959d8491e980f0
+      internalID: 2139171357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artifact_neutral_f1_goldenhammer_26
+      rect:
+        serializedVersion: 2
+        x: 106
+        y: 20
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e615d52ddf23adc4f86dc85f3b100fc2
+      internalID: 1454462291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artifact_neutral_f1_goldenhammer_27
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 20
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eea2d9be28509a8418017c853ead6779
+      internalID: -628022238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: artifact_neutral_f1_goldenhammer_28
+      rect:
+        serializedVersion: 2
+        x: 204
+        y: 20
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e9c24e9a506ea34282ae97b0371994a
+      internalID: -864668667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +723,36 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      artifact_neutral_f1_goldenhammer_0: 1289518818
+      artifact_neutral_f1_goldenhammer_1: 748965433
+      artifact_neutral_f1_goldenhammer_10: -56828852
+      artifact_neutral_f1_goldenhammer_11: 1882520150
+      artifact_neutral_f1_goldenhammer_12: -1908750924
+      artifact_neutral_f1_goldenhammer_13: -1704707866
+      artifact_neutral_f1_goldenhammer_14: 2012250911
+      artifact_neutral_f1_goldenhammer_15: 375958462
+      artifact_neutral_f1_goldenhammer_16: 1287100768
+      artifact_neutral_f1_goldenhammer_17: 1388952107
+      artifact_neutral_f1_goldenhammer_18: -464883163
+      artifact_neutral_f1_goldenhammer_19: 26217970
+      artifact_neutral_f1_goldenhammer_2: -1355636551
+      artifact_neutral_f1_goldenhammer_20: 1984771354
+      artifact_neutral_f1_goldenhammer_21: -799066438
+      artifact_neutral_f1_goldenhammer_22: -1512329093
+      artifact_neutral_f1_goldenhammer_23: -827265315
+      artifact_neutral_f1_goldenhammer_24: 1045506842
+      artifact_neutral_f1_goldenhammer_25: 2139171357
+      artifact_neutral_f1_goldenhammer_26: 1454462291
+      artifact_neutral_f1_goldenhammer_27: -628022238
+      artifact_neutral_f1_goldenhammer_28: -864668667
+      artifact_neutral_f1_goldenhammer_3: -903745733
+      artifact_neutral_f1_goldenhammer_4: 1379415093
+      artifact_neutral_f1_goldenhammer_5: -968760620
+      artifact_neutral_f1_goldenhammer_6: -318638490
+      artifact_neutral_f1_goldenhammer_7: 1939608698
+      artifact_neutral_f1_goldenhammer_8: 22011230
+      artifact_neutral_f1_goldenhammer_9: -159858094
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
