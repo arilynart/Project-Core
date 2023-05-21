@@ -13,6 +13,5 @@ MonoBehaviour:
   m_Name: Impervious
   m_EditorClassIdentifier: 
   title: IMPERVIOUS
-  type: KEYWORD
   art: {fileID: -106348649, guid: 16e10bf6a007eb84eb51901eab3a19a8, type: 3}
-  description: This unit takes no damage when blocking.
+  description: This unit is immune to damage from any unit it blocks.

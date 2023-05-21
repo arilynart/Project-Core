@@ -14,4 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   title: GLOWING WARFLUTE
   art: {fileID: -56828852, guid: 9c9d0dae508d6854694955163564341c, type: 3}
-  description: <b><i>ENTRANCE:</i></b> Your other units gain +1/+1 this turn.
+  description: <b><i>ENTRANCE:</i></b> Your other Knights gain +2/+2 this turn.
