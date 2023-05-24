@@ -14,17 +14,28 @@ public struct CardData
 
     public Sprite art;
 
-    public Card.Faction faction;
+    public bool factionMulti;
+    public bool factionM;
+    public bool factionD;
 
     public Card.Rarity rarity;
 
-    public int attachCost;
-    public int emptyCost;
+    public int wCost;
+    public int fCost;
+    public int mCost;
+    public int sCost;
+    public int eCost;
+    public int dCost;
+    public int vCost;
+    public int bCost;
 
     public int attack;
     public int defense;
 
+    public List<Production> production;
     public List<Ability> abilities;
+
+    public Card flipCard;
 
     public CardData(Card card)
     {
@@ -33,15 +44,27 @@ public struct CardData
         type = card.type;
         typeText = card.typeText;
         art = card.art;
-        faction = card.faction;
+        factionMulti = card.factionMulti;
+        factionM = card.factionM;
+        factionD = card.factionD;
         rarity = card.rarity;
-        attachCost = card.attachCost;
-        emptyCost = card.emptyCost;
+        wCost = card.wCost;
+        fCost = card.fCost;
+        mCost = card.mCost;
+        sCost = card.sCost;
+        eCost = card.eCost;
+        dCost = card.dCost;
+        vCost = card.vCost;
+        bCost = card.bCost;
         attack = card.attack;
         defense = card.defense;
+        production = new List<Production>(card.production);
         abilities = new List<Ability>(card.abilities);
+
+        flipCard = card.flipCard;
     }
 }
+
 
 [CreateAssetMenu(fileName = "New Card", menuName ="ScriptableObjects/Card", order = 1)]
 public class Card : ScriptableObject
@@ -51,8 +74,9 @@ public class Card : ScriptableObject
 
     public enum Type
     {
+        CHAMPION,
         UNIT,
-        SPELL,
+        SPELL
     }
 
     public Type type;
@@ -61,12 +85,9 @@ public class Card : ScriptableObject
 
     public Sprite art;
 
-    public enum Faction
-    {
-        PALADINS
-    }
-
-    public Faction faction;
+    public bool factionMulti;
+    public bool factionD;
+    public bool factionM;
 
     public enum Rarity
     {
@@ -80,11 +101,20 @@ public class Card : ScriptableObject
 
     public Rarity rarity;
 
-    public int attachCost;
-    public int emptyCost;
+    public int wCost;
+    public int fCost;
+    public int mCost;
+    public int sCost;
+    public int eCost;
+    public int dCost;
+    public int vCost;
+    public int bCost;
 
     public int attack;
     public int defense;
 
+    public List<Production> production;
     public List<Ability> abilities;
+
+    public Card flipCard;
 }

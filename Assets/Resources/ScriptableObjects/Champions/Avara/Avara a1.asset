@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad504542c6a74ff40a307c2c12506187, type: 3}
+  m_Name: Avara a1
+  m_EditorClassIdentifier: 
+  title: STARRY EYES
+  art: {fileID: -429201930, guid: 3bc4de31dd0a2d248a804c8905874bc7, type: 3}
+  description: Whenever you draw a card, this unit deals 2 damage to any target.

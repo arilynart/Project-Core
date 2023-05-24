@@ -9,5 +9,6 @@ public class Ability : ScriptableObject
 
     public Sprite art;
 
+    [Multiline(8)]
     public string description;
 }

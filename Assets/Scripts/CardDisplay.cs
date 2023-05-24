@@ -6,20 +6,15 @@ using UnityEngine.UI;
 
 public class CardDisplay : MonoBehaviour
 {
+
+
     public TextMeshProUGUI titleTxt;
     public TextMeshProUGUI typeTxt;
 
     public Image frameImg;
     public Image artImg;
 
-    public Image factionImg;
     public Image rarityImg;
-
-    public Image attachCostBg;
-    public Image emptyCostBg;
-
-    public TextMeshProUGUI attachCostTxt;
-    public TextMeshProUGUI emptyCostTxt;
 
     public Image attackBg;
     public Image defenseBg;
@@ -34,11 +29,22 @@ public class CardDisplay : MonoBehaviour
     public Sprite legendary;
     public Sprite immortal;
 
-    public Sprite paladinIcon;
+    public TextMeshProUGUI costTxt;
 
-    public Sprite paladinUnitBg;
-    public Sprite paladinSpellBg;
+    public Sprite multiChampionBg;
+    public Sprite multiUnitBg;
+    public Sprite multiSpellBg;
 
+    public Sprite factionMChampionBg;
+    public Sprite factionMUnitBg;
+    public Sprite factionMSpellBg;
+
+    public Sprite factionDChampionBg;
+    public Sprite factionDUnitBg;
+    public Sprite factionDSpellBg;
+
+    public List<Image> productionImages = new List<Image>();
+    public RectTransform productionTransform;
     public List<Image> abilityImages = new List<Image>();
     public RectTransform abilityTransform;
 
@@ -46,28 +52,29 @@ public class CardDisplay : MonoBehaviour
 
     public GameObject abilityTitlePrefab;
     public GameObject abilityTextPrefab;
+    public GameObject abilityCardPrefab;
 
     public Card defaultCard;
     public CardData displayingCard;
 
-    private void Start()
+    public CardDisplay backPreview;
+
+    private void Awake()
     {
-        foreach (Image abilityImg in abilityImages)
+/*        foreach (Image abilityImg in abilityImages)
         {
             abilityImg.gameObject.SetActive(false);
 
-        }
+        }*/
         abilityTransform = abilityImages[0].transform.parent.GetComponent<RectTransform>();
 
-        ShowDefaultCard();
-    }
-
-    public void ShowDefaultCard()
-    {
-        if (defaultCard)
+/*        foreach (Image productionImg in productionImages)
         {
-            UpdateDisplay(new CardData(defaultCard));
-        }
+            productionImg.gameObject.SetActive(false);
+
+        }*/
+        productionTransform = productionImages[0].transform.parent.GetComponent<RectTransform>();
+
     }
 
     public void UpdateDisplay(CardData card)
@@ -77,21 +84,57 @@ public class CardDisplay : MonoBehaviour
         titleTxt.text = card.title;
         typeTxt.text = card.typeText;
 
-        switch (card.faction)
-        {
-            case Card.Faction.PALADINS:
-                factionImg.sprite = paladinIcon;
+        costTxt.text = CostToString(card);
 
-                switch (card.type)
-                {
-                    case Card.Type.UNIT:
-                        frameImg.sprite = paladinUnitBg;
+        if (costTxt.text == "") costTxt.transform.parent.gameObject.SetActive(false);
+        else costTxt.transform.parent.gameObject.SetActive(true);
+
+        if (card.factionMulti)
+        {
+            switch (card.type)
+            {
+                case Card.Type.CHAMPION:
+                    frameImg.sprite = multiChampionBg;
                     break;
-                    case Card.Type.SPELL:
-                        frameImg.sprite = paladinSpellBg;
+                case Card.Type.UNIT:
+                    frameImg.sprite = multiUnitBg;
                     break;
-                }
-            break;
+                case Card.Type.SPELL:
+                    frameImg.sprite = multiSpellBg;
+                    break;
+            }
+        }
+
+        if (card.factionD)
+        { 
+            switch (card.type)
+            {
+                case Card.Type.CHAMPION:
+                    frameImg.sprite = factionDChampionBg;
+                    break;
+                case Card.Type.UNIT:
+                    frameImg.sprite = factionDUnitBg;
+                    break;
+                case Card.Type.SPELL:
+                    frameImg.sprite = factionDSpellBg;
+                    break;
+            }
+        }
+
+        if (card.factionM)
+        {
+            switch (card.type)
+            {
+                case Card.Type.CHAMPION:
+                    frameImg.sprite = factionMChampionBg;
+                    break;
+                case Card.Type.UNIT:
+                    frameImg.sprite = factionMUnitBg;
+                    break;
+                case Card.Type.SPELL:
+                    frameImg.sprite = factionMSpellBg;
+                    break;
+            }
         }
 
         switch (card.rarity)
@@ -118,18 +161,6 @@ public class CardDisplay : MonoBehaviour
 
         artImg.sprite = card.art;
 
-        attachCostTxt.text = card.attachCost.ToString();
-
-        if (card.emptyCost > 0)
-        {
-            emptyCostBg.gameObject.SetActive(true);
-            emptyCostTxt.text = card.emptyCost.ToString();
-        }
-        else
-        {
-            emptyCostBg.gameObject.SetActive(false);
-        }
-
         if (card.attack > 0)
         {
             attackBg.gameObject.SetActive(true);
@@ -150,12 +181,38 @@ public class CardDisplay : MonoBehaviour
             defenseBg.gameObject.SetActive(false);
         }
 
-        foreach (Transform obj in abilityDescriptions)
-        {
-            Destroy(obj.gameObject);
-        }
+        var _card = Instantiate(abilityCardPrefab, abilityDescriptions);
+
+        _card.GetComponentInChildren<TextMeshProUGUI>().text = card.title;
+        _card.GetComponentInChildren<Image>().sprite = card.art;
 
         int i = 0;
+        foreach (Image productionImage in productionImages)
+        {
+            if (i < card.production.Count)
+            {
+                Production ability = card.production[i];
+
+                productionImage.gameObject.SetActive(true);
+
+                productionImage.sprite = ability.art;
+
+                var _title = Instantiate(abilityTitlePrefab, abilityDescriptions);
+                var _description = Instantiate(abilityTextPrefab, abilityDescriptions);
+
+                _title.GetComponentInChildren<TextMeshProUGUI>().text = ability.title;
+                _title.GetComponentInChildren<Image>().sprite = ability.art;
+                _description.GetComponent<TextMeshProUGUI>().text = ability.description;
+            }
+            else
+            {
+                productionImage.gameObject.SetActive(false);
+            }
+
+            i++;
+        }
+        
+        i = 0;
         foreach (Image abilityImg in abilityImages)
         {
             if (i < card.abilities.Count)
@@ -181,6 +238,46 @@ public class CardDisplay : MonoBehaviour
             i++;
         }
 
-        LayoutRebuilder.ForceRebuildLayoutImmediate(abilityTransform);
+        
+    }
+
+    public string CostToString(CardData card)
+    {
+        string _text = "";
+
+        for (int i = 0; i < card.wCost; i++)
+        {
+            _text += "<sprite name=iconW>";
+        }
+        for (int i = 0; i < card.fCost; i++)
+        {
+            _text += "<sprite name=iconF>";
+        }
+        for (int i = 0; i < card.mCost; i++)
+        {
+            _text += "<sprite name=iconM>";
+        }
+        for (int i = 0; i < card.sCost; i++)
+        {
+            _text += "<sprite name=iconS>";
+        }
+        for (int i = 0; i < card.eCost; i++)
+        {
+            _text += "<sprite name=iconE>";
+        }
+        for (int i = 0; i < card.dCost; i++)
+        {
+            _text += "<sprite name=iconD>";
+        }
+        for (int i = 0; i < card.vCost; i++)
+        {
+            _text += "<sprite name=iconV>";
+        }
+        if (card.bCost > 0)
+        {
+            _text += $"<sprite name=icon{card.bCost}>";
+        }
+
+        return _text;
     }
 }
